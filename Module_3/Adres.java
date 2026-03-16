@@ -1,6 +1,6 @@
 package Module_3;
 
-class Adres {
+public class Adres {
 
     private String straatnaam;
     private int huisnummer;
@@ -52,6 +52,10 @@ class Adres {
 
     public void print() {
         System.out.println("Het volledige adres is: " + postcode+" "+straatnaam+" "+huisnummer+" "+bus);
+    }
+
+    public String toString() {
+        return postcode + " " + straatnaam + " " + huisnummer + " " + bus;
     }
 
     public static void main(String[] args) {

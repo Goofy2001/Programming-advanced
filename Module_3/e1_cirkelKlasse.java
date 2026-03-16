@@ -2,10 +2,10 @@ package Module_3;
 
 public class e1_cirkelKlasse {
     
-    private float straal;
+    private double straal;
     private String kleur;
 
-    public e1_cirkelKlasse(float straal) {
+    public e1_cirkelKlasse(double straal) {
         this.straal = straal;
         this.kleur = "wit";
     }
@@ -28,8 +28,12 @@ public class e1_cirkelKlasse {
         System.out.println(2*Math.PI*this.straal);
     }
 
-    public void geefOppervlakte() {
-        System.out.println(Math.PI*this.straal*this.straal);
+    public double getStraal() {
+        return straal;
+    }
+
+    public double geefOppervlakte(double straal) {
+        return Math.PI*straal*straal;
     }
 
     public static void main(String[] args) {
