@@ -29,11 +29,11 @@ public class e1_cirkelKlasse {
     }
 
     public double getStraal() {
-        return straal;
+        return this.straal;
     }
 
-    public double geefOppervlakte(double straal) {
-        return Math.PI*straal*straal;
+    public double geefOppervlakte() {
+        return Math.PI*this.straal*this.straal;
     }
 
     public static void main(String[] args) {
