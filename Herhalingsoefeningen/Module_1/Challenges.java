@@ -1,5 +1,6 @@
 package Herhalingsoefeningen.Module_1;
-public class Challenges {
+
+class Challenges {
 
     //e1: loops en selecties
     /* Schrijf code waarmee je alle even getallen tussen 36 en 60 kan afdrukken. Maak hiervoor gebruik van een for loop.

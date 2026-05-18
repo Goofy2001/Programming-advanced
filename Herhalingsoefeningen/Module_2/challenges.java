@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class challenges {
+class challenges {
     /* //e1: test arrays
     Indien je zelf iets wil invoeren kan je gebruik maken van onderstaande code.
 
