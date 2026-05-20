@@ -34,6 +34,7 @@ public class Adres {
         this.bus = bus;
     }
 
+
     //setters
     public void setBus(char bus) {
         this.bus = bus;
@@ -79,6 +80,11 @@ public class Adres {
     public String getWoonplaats() {
         return woonplaats;
     }
+
+    public String toString() {
+        return postcode + " " + woonplaats + " " + straatnaam + " " + huisnummer + " " + bus;
+    }
+
 
     public static void main(String[] args) {
         Adres pizzAdres = new Adres("Straat","Leuven",8080,80,'a');
