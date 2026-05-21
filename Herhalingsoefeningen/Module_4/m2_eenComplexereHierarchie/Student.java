@@ -18,6 +18,13 @@ public class Student extends Persoon {
         this.specialisatie = specialisatie;
     }
 
+    //getter
+    @Override
+    public String getVoornaam() {
+        // TODO Auto-generated method stub
+        return super.getVoornaam();
+    }
+
     //extra
     @Override
     public String toString() {
