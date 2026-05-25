@@ -1,0 +1,59 @@
+package Herhalingsoefeningen.Module_7.mediumChallenges;
+
+import Herhalingsoefeningen.Module_7.mediumChallenges.OntoereikendSaldoException;
+
+public class BankRekening {
+    //field
+    private double bedrag;
+
+    //constructor
+    public BankRekening() {
+        this.bedrag = 0;
+    }
+
+    public BankRekening(double bedrag) {
+        if (bedrag >= 0) {
+            this.bedrag = bedrag;
+        } else {
+            this.bedrag = 0;
+        }
+    }
+
+    //getter
+    public double getBedrag() {
+        return bedrag;
+    }
+
+    //setter
+    private void setBedrag(double bedrag) {
+        this.bedrag = bedrag;
+    }
+
+    //extra
+    public void storten(double bedrag) {
+        if (bedrag <= 0) {
+            System.out.println("Je kan geen negatief bedrag storten");
+        } else {
+            setBedrag(this.bedrag + bedrag);;
+        }
+    }
+
+    public void afhalen(double bedrag) {
+        try {
+            if (bedrag <= 0) {
+                System.out.println("Je kan geen negatief bedrag afhalen");
+            } else if (this.bedrag - bedrag < -1000) {
+                throw new OntoereikendSaldoException("Je hebt onvoldoende geld op je rekening");
+            } else {
+                setBedrag(this.bedrag - bedrag);
+            }
+        } catch (OntoereikendSaldoException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    //print
+    public void print() {
+        System.out.println("Het saldo is : " + this.bedrag);
+    }
+}
