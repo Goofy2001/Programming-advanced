@@ -80,7 +80,6 @@ public class Cirkel {
         System.out.println(blauw_zes.getStraal());
 
         System.out.println(blauw_zes.geefOmtrek());
-        System.out.println(blauw_zes.geefOppervlakte());
-        
+        System.out.println(blauw_zes.geefOppervlakte());   
     }
 }
